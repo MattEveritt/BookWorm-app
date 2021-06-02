@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app
+	xmlns="http://appengine.google.com/ns/1.0">
+
+	<threadsafe>true</threadsafe>
+	<sessions-enabled>false</sessions-enabled>
+	<runtime>java8</runtime>
+
+	<system-properties>
+		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties" />
+		<property name="drivername" value="com.mysql.jdbc.Driver" />
+		<property name="username" value="root" />
+		<property name="password" value="password" />
+		<property name="localusername" value="tommi" />
+		<property name="localpassword" value="kukkuu" />
+		<property name="databasename" value="bookdb" />
+		<property name="sockectfactory" value="com.google.cloud.sql.mysql.SocketFactory" />
+		<property name="cloudsqlinstance" value="bookworm-293120:europe-north1:bookwormsql" />
+	</system-properties>
+</appengine-web-app>
